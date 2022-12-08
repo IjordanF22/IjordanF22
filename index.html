@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link  rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Final Project</h1>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="contact.html">Contact</a>
+  <a href="about.html">About</a>
+</div>
+</body>
+</html>
+
+	<H1>Body Building</H1>
+	<p>Strength training can help you manage or lose weight, and it can increase your metabolism to help you burn more calories. Enhance your quality of life. Strength training may enhance your quality of life and improve your ability to do everyday activities. Strength training can also protect your joints from injury.</p>
+		<div id="BenchPress" class="tabcontent">
+		<h1>Bench Press</h1>
+		<p1>Bench presses work several different muscles in your upper body, including the chest, shoulders, and arms. Although the muscles worked may vary slightly depending on the specific variation that you perform, bench presses can target the following muscles: pectoralis major. anterior deltoid.</p>
+		<img height="200" width="350" src="assets/images/Bench Press.jpg">
+	  </div>
+	  
+	  <div id="hangclean" class="tabcontent">
+		<h1>Hangclean</h1>
+		<p>The shoulder muscles, biceps, triceps, and forearm muscles are significantly engaged. Hang cleans also activate your lower back muscles, stabilizer muscles, glutes, lats, hamstrings, thigh muscles, and hip flexors. It strengthens them all, improving flexibility and mobility for an increased range of motion.</p>
+		<img height="200" width="350" src="assets/images/hangclean.gif">
+	</div>
+	  
+	<div id="bicepcurls" class="tabcontent">
+		<h1>Bicepe curls</h1>
+		<p>Apart from building muscle size, boosting athletic performance and facilitating daily activities, bicep curls build strength in the upper arm, train shoulder to be more stable and teaches the practitioner's core to engage.</p>
+		<img height="200" width="350" src="assets/images/curls.jpg">
+	  </div>
+	  
+	  <div id="backsquats" class="tabcontent">
+		<h1>Squats</h1>
+		<p> Squats target the posterior chain — or the back of your body — including the lower back, glutes, and hamstrings. The quads and core are also engaged. Front squats zone in on the anterior chain — or the front of your body — to hit the quads and upper back more heavily. Glutes and hamstrings are also engaged here.</p>
+		<img height="200" width="350" src="assets/images/squats.png">
+	  </div>
+	  
+	  <button class="tablink" onclick="openCity('BenchPress', this, 'red')" id="defaultOpen">Bench Press</button>
+	  <button class="tablink" onclick="openCity('hangclean', this, 'green')">Hangclean</button>
+	  <button class="tablink" onclick="openCity('bicepcurls', this, 'blue')">Bicep Curls</button>
+	  <button class="tablink" onclick="openCity('backsquats', this, 'orange')">Squats</button>
+
+	<div>
+		<h1>Cardio Exersises</h1>
+		<P>Cardiovascular (aerobic) exercise: increases your energy and stamina • helps control blood pressure • improves your blood lipid profile (cholesterol) • helps you burn extra calories to maintain an ideal weight. Aerobic power helps an athlete sustain a challenging exercise pace over time</P>
+	</div>
+
+	<div id="jumpingJ" class="tabcontent">
+		<h1>Jumping Jacks</h1>
+		<p1>Jumping jacks are a beginner cardiovascular exercise that a person can perform almost anywhere</p>
+		<img height="200" width="350" src="assets/images/jumpingJ.gif">
+	</div>
+
+	<div id="jumprope" class="tabcontent">
+		<h1>Jump rope</h1>
+		<p1>Jump Rope is an effective form of cardio exercise. Jumping rope strengthens calf muscles and improves the elasticity of surrounding tendons</p>
+		<img height="200" width="350" src="assets/images/jrope.png">
+	</div>
+
+	<div id="burpees" class="tabcontent">
+		<h1>Burpees</h1>
+		<p1>An exercise we love to hate, burpees are a super-effective, whole-body move that provides great bang for your buck for cardiovascular endurance</p>
+		<img height="200" width="350" src="assets/images/Burpees.gif">
+	</div>
+
+	<div id="swimming" class="tabcontent">
+		<h1>Swimming</h1>
+		<p1>Swimming is the self-propulsion of a person through water, or other liquid, usually for recreation, sport, exercise, or survival. Locomotion is achieved through coordinated movement of the limbs and the body to achieve hydrodynamic thrust which results in directional motion</p>
+		<img height="200" width="350" src="assets/images/swimming.gif">
+	</div>
+
+
+		<button class="tablink" onclick="openCity('jumpingJ', this, 'red')" id="defaultOpen">Jumping Jacks</button>
+	  	<button class="tablink" onclick="openCity('jumprope', this, 'green')">Jump rope</button>
+	  	<button class="tablink" onclick="openCity('burpees', this, 'blue')">Burpees</button>
+	  	<button class="tablink" onclick="openCity('swimming', this, 'orange')">Swimming</button>
+	
+	<div>
+		<h1>Diets</h1>
+
+	</div>
+
+
+	<div>
+		<select id="Diets" name="Item 1">
+			<OPTION VALUE="0"> Select diet</OPTION>
+			<OPTION VALUE="1">Intermittent Fasting</OPTION>
+			<OPTION VALUE="2">Mediterranean Diet</OPTION>
+			<OPTION VALUE="3">The Ketogenic Diet</OPTION>
+			<OPTION VALUE="4">Carnivore Diet</OPTION>
+			<OPTION VALUE="5">Paleo Diet</OPTION>
+		</select>
+			
+		<button onclick="message()">Find your diet</button>
+				
+		<script>
+			function message(){
+
+				var s = document.getElementById("Diets");
+				var div = document.getElementById("dietText");
+
+				  if (s.value == 0) {
+					div.innerHTML = "<p1>Please select an option!</p1>";
+				} else if (s.value == 1) {
+					div.innerHTML = "<p1>this isnt so much a diet as an eating strategy where you consume all of your calories in a set time period and then fast for the rest of the day.</p1>";
+				} else if (s.value == 2) {
+					div.innerHTML = "<p1>The diet is rich in heart-healthy foods such as vegetables, fish, fruit, grains, olive oil, and nuts. Consumption of red meat is kept to a minimum, and dairy intake is moderate and consists of high-quality sources such as yogurt and cheeses.</p1>";
+				} else if (s.value == 3) {
+				  div.innerHTML = "<p1>Keto, as its called for short, is a diet that prioritizes fat (65-75 percent of your daily calories), with moderate protein consumption (20-30 percent) and very few carbs (only about five percent, though some versions prohibit carbs altogether). Which means youll be eating a lot of avocados, eggs, and bunless cheeseburgers.</p1>";
+				} else if (s.value == 4) {
+					div.innerHTML = "<p1>Carnivore devotees only eat animal-based products — meat, cheese, milk, animal-based fats, and eggs (though some variations only allow meat, no eggs, and dairy). There are no grains, no vegetables, and no fruits.</p1>";
+				} else if (s.value == 5) {
+					div.innerHTML = "<p1>Paleo diet, sometimes called “The Caveman Diet,” could be considered a cousin of the carnivore diet. In addition to meat, youre also eating fish, vegetables, fruit, nuts, and seeds. You need to avoid any grains, dairy, processed foods, beans, legumes, and sugars while adhering to this diet.</p1>";
+				}
+			}
+		</script>
+			
+	</div>
+	<div id="dietText"
+
+	</div>
+  
+	<div>
+		<script src="app.js"></script>
+	</div>
+</body>
+</html>
